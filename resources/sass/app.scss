@@ -1,0 +1,138 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navigation-item {
+  float: left;
+}
+
+.navigation-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigation-item a:hover:not(.active) {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.navigation-active {
+  background-color: #4CAF50;
+}
+
+.bg-custom {
+  background-color: #333;
+}
+
+.btn-custom {
+  color: #FFFFFF;
+  background-color: #333333;
+  border-color: #171717;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.open .dropdown-toggle.btn-custom {
+  color: #FFFFFF;
+  background-color: #4D4D4D;
+  border-color: #171717;
+  transition:0.5s;
+}
+
+.btn-custom:active,
+.btn-custom.active,
+.open .dropdown-toggle.btn-custom {
+  background-image: none;
+}
+
+.btn-custom.disabled,
+.btn-custom[disabled],
+fieldset[disabled] .btn-custom,
+.btn-custom.disabled:hover,
+.btn-custom[disabled]:hover,
+fieldset[disabled] .btn-custom:hover,
+.btn-custom.disabled:focus,
+.btn-custom[disabled]:focus,
+fieldset[disabled] .btn-custom:focus,
+.btn-custom.disabled:active,
+.btn-custom[disabled]:active,
+fieldset[disabled] .btn-custom:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #333333;
+  border-color: #171717;
+}
+
+.btn-custom .badge {
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.navigation-item a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigation-item.ddwn {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color:#f1f1f1 !important;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.ddwn:hover .dropdown-content {
+  display: block;
+
+  transition: 1s;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
